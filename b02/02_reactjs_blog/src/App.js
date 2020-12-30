@@ -1,5 +1,6 @@
 import { useEffect, useState, useRef } from 'react';
 import DemoComponents from './components/DemoComponents';
+import DemoButton from './components/DemoButton';
 
 // useEffect luôn luôn chạy sau khi render
 // componentWillMount -> hooks không hỗ trợ
@@ -67,11 +68,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Count1: {count}</h1>
-        <h1>Count2: {count2}</h1>
-        <button onClick={handleClick} id="button-click">Click me - Count</button>
-        <button onClick={handleClick2}>Click me - Count2</button>
-        <DemoComponents />
+        <DemoButton />
       </header>
     </div>
   );
